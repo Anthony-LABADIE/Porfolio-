@@ -1,0 +1,17 @@
+.home_containeur {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+.text h1 {
+  font-size: 8vh;
+}
+.text p {
+  font-size: 3vh;
+}
