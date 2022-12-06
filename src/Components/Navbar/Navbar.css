@@ -3,13 +3,12 @@
   padding: 0;
 }
 body {
-background: rgb(254,236,230);
-background: linear-gradient(0deg, rgba(254,236,230,1) 0%, rgba(177,160,155,1) 100%);
+  background-color: var(--body-bg-color);
+  background: var(--body--gradient-bg-color); 
 }
 .nav-container {
   display: flex;
   align-items: center;
-  border-color: blue;
 }
 .nav-menu {
   display: flex;
@@ -41,7 +40,7 @@ background: linear-gradient(0deg, rgba(254,236,230,1) 0%, rgba(177,160,155,1) 10
 
 .nav-item:hover:after {
   width: 100%;
-  background: #66b7ad;
+  background: var(--line-btn-navbar-color);
 }
 .img_profil {
   position: relative;
