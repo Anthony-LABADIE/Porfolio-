@@ -1,7 +1,8 @@
 import React from 'react'
 import Model_3D from '../../Components/Model_3D/Model_3D'
 import Navbar from '../../Components/Navbar/Navbar'
-import About from '../About/About'
+import About from '../../Components/About/About'
+import Project from '../../Components/Project/Project'
 import './Home.css'
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
       </div>
       <div>
         <About />
+        <Project/>
       </div>
     </div>
   )
