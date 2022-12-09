@@ -1,0 +1,9 @@
+.containeur_model{
+    width: 100vh;
+    height: 100vh;
+    margin-top: 2rem;
+}
+.canvas_model{
+    background-color: #FEECE6;
+    position: absolute;
+}

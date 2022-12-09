@@ -1,0 +1,22 @@
+.img_projectcards {
+  width: 90%;
+  height: 90%;
+}
+
+.container_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 3rem;
+  width: 80%;
+  justify-self: center;
+  transition: 0.3s;
+
+}
+.container_cards:hover {
+  opacity: 1;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
