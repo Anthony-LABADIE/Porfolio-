@@ -1,17 +1,29 @@
-
 .nav-container {
   display: flex;
   align-items: center;
-
 }
 .nav-menu {
   display: flex;
   justify-content: space-around;
   text-align: center;
   list-style-type: none;
-  width: 80rem;
+  width: 140rem;
   margin-top: 1rem;
   margin: 0;
+}
+
+.nav-icone {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  list-style-type: none;
+  width: 40rem;
+  margin-top: 1rem;
+  margin: 0;
+}
+.img_profil {
+  position: relative;
+  width: 30%;
 }
 .nav-links {
   color: black;
@@ -19,6 +31,7 @@
   height: 100%;
   border-bottom: 3px solid transparent;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 .nav-item {
   line-height: 40px;
@@ -26,7 +39,7 @@
   margin: 0;
 }
 .nav-item:after {
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   width: 0;
@@ -38,13 +51,11 @@
   width: 100%;
   background: var(--line-btn-navbar-color);
 }
-.img_profil {
-  position: relative;
-  width: 15%;
-}
+
 /* Création du switch*/
-.containeur_switch{
+.containeur_switch {
   display: flex;
+  justify-content: space-around;
   margin: 0;
   align-items: center;
 }
