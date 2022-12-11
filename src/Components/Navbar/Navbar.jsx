@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import ImgProfil from '../../assets/Image/Image1.png'
+import ImgGithub from '../../assets/Image/github.png'
+import ImgLinkedin from '../../assets/Image/linkedin.png'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -9,9 +10,6 @@ const Navbar = () => {
       <div className="main-container" />
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            <img className="img_profil" src={ImgProfil} alt="img_profil" />
-          </NavLink>
           <ul className="nav-menu">
             <li className="nav-item">
               <NavLink to="/" className="nav-links">
@@ -38,13 +36,27 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li>
-            <div className='containeur_switch'>
+          </ul>
+
+            <ul className="nav-icone">
+              <a href="https://github.com/Anthony-LABADIE">
+                <img className="img_profil" src={ImgGithub} alt="img_profil" />
+              </a>
+              <a href="https://www.linkedin.com/in/anthony-labadie/">
+                <img
+                  className="img_profil"
+                  src={ImgLinkedin}
+                  alt="img_profil"
+                />
+              </a>
+            </ul>
+
+          <div className="containeur_switch">
             <label className="switch">
               <input type="checkbox" />
               <span></span>
             </label>
-            </div>
-          </ul>
+          </div>
         </div>
       </nav>
     </div>
