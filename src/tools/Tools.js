@@ -1,5 +1,6 @@
 import ImgCircus from '../assets/Image/wild-circus.png'
 import ImgDrinkr from '../assets/Image/drinkr.png'
+import ImgVoyage from '../assets/Image/voyage-sans-retour.png'
 
 export const ProjectsData = [
   {
@@ -19,11 +20,11 @@ export const ProjectsData = [
     img_mobile: 'Phoebe',
   },
       {
-    id: 2,
-    name: "DRINK'R",
+    id: 3,
+    name: "Voyage sans retour",
     description:
       'Réalisation du projet : 💻',
-    img_desktop: ImgDrinkr,
+    img_desktop: ImgVoyage,
     img_mobile: 'Phoebe',
   },
 ]

@@ -9,7 +9,12 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+
       <div className="home_containeur">
+        <div className="ocean">
+          <div className="wave"></div>
+          <div className="wave"></div>
+        </div>
         <div className="text">
           <h1>
             <span style={{ color: 'Black' }}>Anthony </span>
@@ -30,7 +35,7 @@ const Home = () => {
       </div>
       <div>
         <About />
-        <Project/>
+        <Project />
       </div>
     </div>
   )
