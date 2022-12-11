@@ -12,7 +12,7 @@ const Project = () => {
 
         <div className="fond_project">
           {ProjectsData.map((el) => (
-            <Link to={`/Portfolio/${el.id}`} className="nav-project" key={el.id}>
+            <Link to={`/Portfolio/${el.id - 1}`} className="nav-project" key={el.id}>
               <ProjectCards
                 name={el.name}
                 img_desktop={el.img_desktop}
