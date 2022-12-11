@@ -9,7 +9,6 @@
 }
 body {
   background: var(--body-bg-color);
-  background: var(--body--gradient-bg-color); 
   overflow-x: hidden;
 }
 html, body { height: 100%; }
