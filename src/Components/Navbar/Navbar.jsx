@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import ImgGithub from '../../assets/Image/github.png'
 import ImgLinkedin from '../../assets/Image/linkedin.png'
 import './Navbar.css'
@@ -12,41 +12,41 @@ const Navbar = () => {
         <div className="nav-container">
           <ul className="nav-menu">
             <li className="nav-item">
-              <NavLink to="/" className="nav-links">
+              <Link to="/" className="nav-links">
                 Accueil
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className="nav-links">
+              <Link to="/#About" className="nav-links">
                 A propos de moi
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className="nav-links">
+              <Link to="/#Portfolio" className="nav-links">
                 Portfolio
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className="nav-links">
+              <Link to="/" className="nav-links">
                 Compétences
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className="nav-links">
+              <Link to="/" className="nav-links">
                 Contact
-              </NavLink>
+              </Link>
             </li>
           </ul>
 
             <ul className="nav-icone">
               <a href="https://github.com/Anthony-LABADIE">
-                <img className="img_profil" src={ImgGithub} alt="img_profil" />
+                <img className="img_reseau" src={ImgGithub} alt="icone" />
               </a>
               <a href="https://www.linkedin.com/in/anthony-labadie/">
                 <img
-                  className="img_profil"
+                  className="img_reseau"
                   src={ImgLinkedin}
-                  alt="img_profil"
+                  alt="icone"
                 />
               </a>
             </ul>

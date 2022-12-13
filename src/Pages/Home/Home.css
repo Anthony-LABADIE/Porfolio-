@@ -7,15 +7,19 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  text-align: center;
+  transform: translateY(-34%);
 }
-.text h1 {
-  font-size: 8vh;
+.h1text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+  font-weight: 800;
 }
-.text p {
-  font-size: 3vh;
+.textname {
+  display: block;
+  opacity: 0;
+    font-size: 8vh;
 }
-
 .ocean {
   height: 5%;
   width: 100%;
