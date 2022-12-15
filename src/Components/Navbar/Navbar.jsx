@@ -5,12 +5,21 @@ import ImgLinkedin from '../../assets/Image/linkedin.png'
 import './Navbar.css'
 
 const Navbar = () => {
+    const [click, setClick] = React.useState(false);
+
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
+  
   return (
     <div>
       <div className="main-container" />
       <nav className="navbar">
         <div className="nav-container">
-          <ul className="nav-menu">
+          <input id="menu__toggle" type="checkbox" onClick={handleClick}/>
+          <label className="menu__btn" htmlFor="menu__toggle">
+            <span></span>
+          </label>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links">
                 Accueil
@@ -38,18 +47,14 @@ const Navbar = () => {
             </li>
           </ul>
 
-            <ul className="nav-icone">
-              <a href="https://github.com/Anthony-LABADIE">
-                <img className="img_reseau" src={ImgGithub} alt="icone" />
-              </a>
-              <a href="https://www.linkedin.com/in/anthony-labadie/">
-                <img
-                  className="img_reseau"
-                  src={ImgLinkedin}
-                  alt="icone"
-                />
-              </a>
-            </ul>
+          <ul className="nav-icone">
+            <a href="https://github.com/Anthony-LABADIE">
+              <img className="img_reseau" src={ImgGithub} alt="icone" />
+            </a>
+            <a href="https://www.linkedin.com/in/anthony-labadie/">
+              <img className="img_reseau" src={ImgLinkedin} alt="icone" />
+            </a>
+          </ul>
 
           <div className="containeur_switch">
             <label className="switch">
