@@ -12,7 +12,7 @@ const Portfolio = () => {
     <div>
       <div>
         <Navbar />
-        <div className="fond_project" />
+        <div className="project" />
       </div>
       <h1>{ProjectsData[id].name}</h1>
       <img className='img_project' src={ProjectsData[id].img_desktop} alt="img_site" />
