@@ -18,14 +18,14 @@
 .textname {
   display: block;
   opacity: 0;
-    font-size: 8vh;
+  font-size: 8vh;
 }
 .ocean {
   height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
   background: #015871;
 }
 
@@ -64,4 +64,16 @@
   50% {
     transform: translate3d(0, 5px, 0);
   }
+}
+@media screen and (max-width: 1000px) {
+  .model3D {
+    display: none;
+  }
+.text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  transform: translateY(20%);
+}
+
 }

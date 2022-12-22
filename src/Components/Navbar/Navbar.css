@@ -7,6 +7,7 @@
 #menu__toggle {
   display: none;
 }
+
 .nav-menu {
   display: flex;
   justify-content: space-around;
@@ -18,10 +19,11 @@
 }
 
 .nav-icone {
+  position: relative;
   display: flex;
   justify-content: space-around;
   text-align: center;
-  width: 6%;
+  width: 6em;
 }
 .nav-icone a {
   padding: 0.4rem;
@@ -136,7 +138,6 @@
   }
   .menu__btn {
     position: fixed;
-    top: 20px;
     left: 20px;
     width: 26px;
     height: 26px;
@@ -176,16 +177,5 @@
   padding: 80px 0;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   }
+
 }
-/* display: block;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: #ECEFF1;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-  transition-duration: .25s; */

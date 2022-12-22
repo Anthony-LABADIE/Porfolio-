@@ -4,12 +4,14 @@ import Model_3D from '../../Components/Model_3D/Model_3D'
 import Navbar from '../../Components/Navbar/Navbar'
 import About from '../../Components/About/About'
 import Project from '../../Components/Project/Project'
+import { useEffect, useState } from 'react'
+
 import './Home.css'
-import { useEffect } from 'react'
 
 const Home = () => {
+  const [Loader, setLoader] = useState(true)
   let tl = gsap.timeline()
-  useEffect(() => {
+  function animate() {
     tl.to('.h1text .textname', {
       duration: 1,
       opacity: 1,
@@ -17,12 +19,18 @@ const Home = () => {
       ease: Power3.out,
       stagger: 1.5,
     })
-  }, [])
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false)
+    }, 5000)
+    animate()
+  }, [Loader])
 
   return (
     <div>
       <Navbar />
-
       <div className="home_containeur">
         <div className="ocean">
           <div className="wave"></div>
@@ -46,7 +54,7 @@ const Home = () => {
             06.31.66.76.59
           </p>
         </div>
-        <div className="3D">
+        <div className="model3D">
           <Model_3D />
         </div>
       </div>
@@ -54,7 +62,7 @@ const Home = () => {
         <About />
       </div>
       <div id="Portfolio">
-      <Project />
+        <Project />
       </div>
     </div>
   )

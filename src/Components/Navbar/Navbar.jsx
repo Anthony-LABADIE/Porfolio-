@@ -15,10 +15,12 @@ const Navbar = () => {
       <div className="main-container" />
       <nav className="navbar">
         <div className="nav-container">
+          <div className='menu_burger'>
           <input id="menu__toggle" type="checkbox" onClick={handleClick}/>
           <label className="menu__btn" htmlFor="menu__toggle">
             <span></span>
           </label>
+          </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links">

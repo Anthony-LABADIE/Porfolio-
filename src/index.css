@@ -1,6 +1,10 @@
 :root {
   --body-bg-color: rgb(254, 236, 230);
-  --body--gradient-bg-color: linear-gradient(0deg, rgba(254,236,230,1) 45%, rgba(255,239,233,1) 100%);
+  --body--gradient-bg-color: linear-gradient(
+    0deg,
+    rgba(254, 236, 230, 1) 45%,
+    rgba(255, 239, 233, 1) 100%
+  );
   --line-btn-navbar-color: #66b7ad;
 }
 * {
@@ -9,9 +13,13 @@
 }
 body {
   background: var(--body-bg-color);
+  position: relative
+}
+html,
+body {
+  height: 100%;
   overflow-x: hidden;
 }
-html, body { height: 100%; }
-p{
+p {
   font-size: 1.4em;
 }
