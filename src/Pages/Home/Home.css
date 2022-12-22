@@ -8,3 +8,8 @@
   justify-content: space-around;
   flex-direction: row;
 }
+@media screen and (max-width: 1000px) {
+.home{
+  margin-bottom: 15rem;
+}
+}
