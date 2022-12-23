@@ -19,6 +19,7 @@
   font-size: 8vh;
 }
 .ocean {
+  display: flex;
   height: 5%;
   width:100%;
   position:absolute;
@@ -69,10 +70,17 @@
     display: none;
   }
 .text {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  transform: translateY(20%);
+margin-bottom: 140%;
+}
+}
+@media screen and (max-width: 400px) {
+.text {
+margin-bottom: 110%;
+}
+}
+@media screen and (max-width: 370px) {
+.text {
+margin-bottom: 100%;
+}
 }
 
-}
