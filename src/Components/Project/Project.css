@@ -18,3 +18,17 @@
   text-decoration: none;
   color: black;
 }
+@media screen and (max-width: 768px) {
+  .fond_project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+          margin: 0;
+  }
+  .fond_project img {
+    width: 100%;
+
+  }
+}
+  
