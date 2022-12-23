@@ -75,7 +75,22 @@
 .btn_cv:hover:after {
   top: 0;
 }
-
+@media screen and (max-width: 1000px) {
+  .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text_btn {
+  transform: translateX(0%);
+  padding: 2rem;
+}
+.img_ordi {
+  width: 150%;
+  height: 100%;
+  transform: translateX(0%);
+}
+}
 
 /* @media screen and (max-width: 1000px) {
   .containeur_about {
